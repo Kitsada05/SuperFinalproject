@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์แนะนำหนัง</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #5a5555;
+        color: white;
+    }
+
+    .carousel-item img {
+        height: 400px;
+        width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+
+    .carousel {
+        margin-top: 0;
+    }
+
+    .center-container {
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: rgb(247, 16, 0);
+    }
+
+    
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>MOVIE RECOMMENDATION</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="THAI.html"><b>THAI MOVIES</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cartoon.html"><b>CARTOON MOVIE</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="SERIES.html"><b>SERIES</b></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>CONTRIBUTE</b></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">นายกฤษฎา นาคะพงศ์</a></li>
+                <li><a class="dropdown-item" href="#">นายกฤตดิศักดิ์ แก้วบุรงค์</a></li>
+                <li><a class="dropdown-item" href="#">นายชาญชัญญ์ เอื้อประเสริฐ</a></li>
+                <li><a class="dropdown-item" href="#">นายณัฐดนัย สันติชวลิตสกุล</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="carousel slide w-100" id="movieCarousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="https://image.tmdb.org/t/p/original/bADc2ddWYs4hBcOdOgALraWRSj9.jpg" class="d-block w-50" alt="Toy Story">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Puss in Boots</h5>
+                <p>แมวน้อยยอดอัศวิน</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" class="d-block w-50" alt="Frozen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Avenger</h5>
+                <p>ทีมพิทักษ์ปกป้องจักรวาล</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://s.isanook.com/mv/0/ud/30/153191/1.jpg?ip/resize/w728/q80/jpg" class="d-block w-50" alt="Up">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>ธี่หยด</h5>
+                <p>วิญญาณอาฆาต</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">ก่อนหน้า</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">ถัดไป</span>
+    </button>
+</div>
+
+
+<div class="container mt-5">
+    <h2 class="text-white mb-4">ยอดนิยม</h2>
+    <div class="d-flex overflow-auto">
+
+<a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank">
+    <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+        <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+        <div class="position-absolute top-0 start-0 p-2">
+            <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">1</h1>
+        </div>
+        <p class="text-center mt-2">Avengers Endgam</p>
+    </div>
+</a>
+
+
+        <a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://upload.wikimedia.org/wikipedia/th/d/d6/Avatar_%282009_film%29_poster.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">2</h1>
+            </div>
+            <p class="text-center mt-2">Avatar</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=avtdfHis_3k" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://s.isanook.com/mv/0/ud/30/153191/1.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">3</h1>
+            </div>
+            <p class="text-center mt-2">ธี่หยด</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=GIaLnv0HVm8" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://lh3.googleusercontent.com/Opm4LqsHfm5Qzh5B4GX1QjunEuhebPYQcyTE5-g_9V9pjIQCYEO7M7Ff6RM4TebblyL0iCeGaO38pQlH8_STcBwxJAai6uFX=w260" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">4</h1>
+            </div>
+            <p class="text-center mt-2">นาจา2</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=_YGosxAnZ4Q" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://inwfile.com/s-fq/6u0swi.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">5</h1>
+            </div>
+            <p class="text-center mt-2">Ultraman: Rising</p>
+        </div>
+
+        
+
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-white mb-4">การ์ตูนอนิเมชั่น</h2>
+    <div class="d-flex overflow-auto">
+
+        <a href="https://www.youtube.com/watch?v=tHb7WlgyaUc" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://image.tmdb.org/t/p/original/bADc2ddWYs4hBcOdOgALraWRSj9.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">1</h1>
+            </div>
+            <p class="text-center mt-2">Puss in boots 2</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=PXi3Mv6KMzY" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/cc55f224f673b8e495c590f7ef5528e60ad1c5833360649a4136ac1e31de682e.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">2</h1>
+            </div>
+            <p class="text-center mt-2">กังฟูแพนด้า</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=GIaLnv0HVm8" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://lh3.googleusercontent.com/Opm4LqsHfm5Qzh5B4GX1QjunEuhebPYQcyTE5-g_9V9pjIQCYEO7M7Ff6RM4TebblyL0iCeGaO38pQlH8_STcBwxJAai6uFX=w260" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">3</h1>
+            </div>
+            <p class="text-center mt-2">นาจา2</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=IeFWNtMo1Fs" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://lh3.googleusercontent.com/9_Q9f8fzf5qLazr1d0L-9XgKbOGWa8d5q0THv4uDNI7XZQUzwaYNxxIEeLhgWAOl6w_I2RDa8jjJm3_po88DaOCVWwXZcbTTb48=s0" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">4</h1>
+            </div>
+            <p class="text-center mt-2">The Garfield Movie</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=YEZaJkPuq4o" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://kurenai17.wordpress.com/wp-content/uploads/2013/09/cloudy_with_a_chance_of_meatballs_two_ver7_xxlg.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">5</h1>
+            </div>
+            <p class="text-center mt-2">Cloudy With a Chance of Meatballs</p>
+        </div>
+        
+        
+
+    </div>
+</div>
+<div class="container mt-5">
+    <h2 class="text-white mb-4">ซีรีส์น่าดู</h2>
+    <div class="d-flex overflow-auto">
+
+        <a href="https://www.youtube.com/watch?v=tqEvBxRP9M8" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/490812938_1160578559414070_7350476944131557044_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JgFkIwM4e8UQ7kNvwF3vMfY&_nc_oc=AdnkNHytxL32S_PQ4CguVK0UlX_i9iIUpky5cDQxtPYNAPJZmbadSwRbpZuQKHHAonU&_nc_zt=23&_nc_ht=scontent.fbkk14-1.fna&_nc_gid=pqWU5AbdHtal6G11FoN6zQ&oh=00_AfEGnBz0i0TgRPzvRgO4nYjfL1VYuGzElIefQ8bIS20UwQ&oe=6816D891" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">1</h1>
+            </div>
+            <p class="text-center mt-2">Love Scout</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=JDwLxiTPrCQ" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://i0.wp.com/www.korseries.com/wp-content/uploads/2022/11/Weak-Hero-Class-1-Wavve-Poster-071122.jpg?resize=712%2C1024&ssl=1" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">2</h1>
+            </div>
+            <p class="text-center mt-2">Weak Hero: Class 1</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=AsF2LlZzth0" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/473567113_1152225786912947_4810004736486065781_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BDsvqXRjzxIQ7kNvwGDTMgf&_nc_oc=Adn-z87tMINL-U_EXvl0X5mcFz4mgndB_jfoF4s7o75uEuq0-DIHfgBwAyppsTH-TMY&_nc_zt=23&_nc_ht=scontent.fbkk10-1.fna&_nc_gid=-ndU6pv0qs3ENrXpJ4rUnQ&oh=00_AfHQKffsNmmr39kqOG_mT1fWZtsx5QQJj06jFg3CcZURtw&oe=6816FC8F" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">3</h1>
+            </div>
+            <p class="text-center mt-2">Undercover High School</p>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=a_po0Zpbnc4" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="https://s359.kapook.com/r/600/auto/pagebuilder/0b0af152-a5ce-4f6c-b073-5666ef392129.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">4</h1>
+            </div>
+            <p class="text-center mt-2">Heavenly Ever After</p>
+        </div>
+
+        <a href="https://asianwiki.com/images/4/4a/Crushology_101-p.jpg" target="_blank">
+        <div class="position-relative me-3" style="flex: 0 0 auto; width: 180px;">
+            <img src="img/ดาวน์โหลด.jpg" class="rounded" style="height: 270px; width: 100%; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-2">
+                <h1 class="text-white fw-bold" style="text-shadow: 2px 2px 4px #000;">5</h1>
+            </div>
+            <p class="text-center mt-2">Crushology 101</p>
+        </div>
+    </a></a></a></a></a></div></div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; นายชาญชัญญ์ เอื้อประเสริฐ 670710317</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
